@@ -1,10 +1,10 @@
-import React from 'react';
-import styled from 'styled-components';
-import { motion } from 'framer-motion';
-import { Github } from '@styled-icons/boxicons-logos';
-import { Email } from '@styled-icons/material-twotone';
-import { LinkedinSquare } from '@styled-icons/boxicons-logos';
-import { FilePdf } from '@styled-icons/boxicons-solid';
+import React from "react";
+import styled from "styled-components";
+import { motion } from "framer-motion";
+import { Github } from "@styled-icons/boxicons-logos";
+import { Email } from "@styled-icons/material-twotone";
+import { LinkedinSquare } from "@styled-icons/boxicons-logos";
+import { FilePdf } from "@styled-icons/boxicons-solid";
 
 const SideContainer = styled.div`
 	width: 40px;
@@ -51,7 +51,7 @@ const SideIcon = styled(motion.div)`
 `;
 
 const Line = styled.div`
-	content: '';
+	content: "";
 	display: block;
 	width: 2px;
 	height: 50px;
@@ -62,7 +62,7 @@ const Line = styled.div`
 
 const Sidebar = ({ handleToast }) => {
 	const handleClipboardClick = () => {
-		navigator.clipboard.writeText('alfonso.achiaga@gmail.com');
+		navigator.clipboard.writeText("isykaal4saviour@gmail.com");
 		handleToast(`Email copy to clipboard! 🥳`);
 		return;
 	};
@@ -72,17 +72,17 @@ const Sidebar = ({ handleToast }) => {
 			<LeftSideContainer>
 				<SideIcon whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.85 }}>
 					<a
-						href='https://bender-portfolio.s3.amazonaws.com/cv-alfonso-achiaga.pdf'
-						target='_blank'
-						rel='noopener noreferrer'>
+						href="https://docs.google.com/document/d/1feILOk8st9vxWzOmOr0MU2OgKBZJwHxIlPiphOfWM64/edit?usp=sharing"
+						target="_blank"
+						rel="noopener noreferrer">
 						<FilePdf />
 					</a>
 				</SideIcon>
 				<SideIcon whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.85 }}>
 					<a
-						href='https://github.com/Achiaga'
-						target='_blank'
-						rel='noopener noreferrer'>
+						href="https://github.com/isyel"
+						target="_blank"
+						rel="noopener noreferrer">
 						<Github />
 					</a>
 				</SideIcon>
@@ -91,9 +91,9 @@ const Sidebar = ({ handleToast }) => {
 				</SideIcon>
 				<SideIcon whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.85 }}>
 					<a
-						href='https://www.linkedin.com/in/alfonso-achiaga/'
-						target='_blank'
-						rel='noopener noreferrer'>
+						href="https://www.linkedin.com/in/israel-chukwuemeka/"
+						target="_blank"
+						rel="noopener noreferrer">
 						<LinkedinSquare />
 					</a>
 				</SideIcon>

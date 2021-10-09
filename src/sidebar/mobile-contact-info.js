@@ -68,7 +68,7 @@ const MobileContactInfo = ({ handleToast }) => {
 	};
 
 	const handleClipboardClick = () => {
-		navigator.clipboard.writeText("alfonso.achiaga@gmail.com");
+		navigator.clipboard.writeText("isykaal4saviour@gmail.com");
 		handleToast(`Email copy to clipboard! 🥳`);
 		return;
 	};
@@ -88,7 +88,7 @@ const MobileContactInfo = ({ handleToast }) => {
 					animate={expandIcons ? "show" : "hidden1"}
 					whileTap={{ scale: 0.85 }}>
 					<a
-						href="https://bender-portfolio.s3.amazonaws.com/cv-alfonso-achiaga.pdf"
+						href="https://docs.google.com/document/d/1feILOk8st9vxWzOmOr0MU2OgKBZJwHxIlPiphOfWM64/edit?usp=sharing"
 						target="_blank"
 						rel="noopener noreferrer">
 						<FilePdf />
@@ -101,7 +101,7 @@ const MobileContactInfo = ({ handleToast }) => {
 					animate={expandIcons ? "show" : "hidden2"}
 					whileTap={{ scale: 0.85 }}>
 					<a
-						href="https://github.com/Achiaga"
+						href="https://github.com/isyel"
 						target="_blank"
 						rel="noopener noreferrer">
 						<Github />
@@ -122,7 +122,7 @@ const MobileContactInfo = ({ handleToast }) => {
 					animate={expandIcons ? "show" : "hidden4"}
 					whileTap={{ scale: 0.85 }}>
 					<a
-						href="https://www.linkedin.com/in/alfonso-achiaga/"
+						href="https://www.linkedin.com/in/israel-chukwuemeka/"
 						target="_blank"
 						rel="noopener noreferrer">
 						<LinkedinSquare />

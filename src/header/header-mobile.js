@@ -39,7 +39,7 @@ const MobileHeader = () => {
 	return (
 		<MobileHeaderContainer>
 			<ProgrammerIcon src={CodeIcon} />
-			<h1>ACHIAGA</h1>
+			<h1>ISRAEL</h1>
 		</MobileHeaderContainer>
 	);
 };

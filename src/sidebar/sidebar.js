@@ -5,6 +5,7 @@ import { Github } from "@styled-icons/boxicons-logos";
 import { Email } from "@styled-icons/material-twotone";
 import { LinkedinSquare } from "@styled-icons/boxicons-logos";
 import { FilePdf } from "@styled-icons/boxicons-solid";
+import MyCv from "../assets/Israel_Chukwuemeka_CV.pdf";
 
 const SideContainer = styled.div`
 	width: 40px;
@@ -71,10 +72,7 @@ const Sidebar = ({ handleToast }) => {
 		<>
 			<LeftSideContainer>
 				<SideIcon whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.85 }}>
-					<a
-						href="https://docs.google.com/document/d/1feILOk8st9vxWzOmOr0MU2OgKBZJwHxIlPiphOfWM64/edit?usp=sharing"
-						target="_blank"
-						rel="noopener noreferrer">
+					<a href={MyCv} target="_blank" rel="noopener noreferrer">
 						<FilePdf />
 					</a>
 				</SideIcon>

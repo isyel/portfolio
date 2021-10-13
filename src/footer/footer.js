@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const Container = styled.div`
 	font-size: 20px;
@@ -20,9 +20,13 @@ const Footer = () => {
 		<Container>
 			<Text>
 				'All these projects are powered by a lot of
-				<span role='img' aria-label='coffe'>
-					{'  '}
+				<span role="img" aria-label="coffee">
+					{"  "}
 					☕️
+				</span>
+				<span role="img" aria-label="night">
+					{"  "}
+					🌃
 				</span>
 				'
 			</Text>

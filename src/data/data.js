@@ -2,7 +2,7 @@
 export const dataExperience = {
 	list: {
 		0: {
-			main: "Frontend React Engineer",
+			main: "Frontend Engineer",
 		},
 		1: {
 			main: "Software Engineer",
@@ -24,7 +24,7 @@ export const dataExperience = {
 				(Similar to Trello and Jira Board) that was used internally by the innoloft team, \
 				and also offered as a premium service (LoftOS) to Innoloft partners.",
 			second:
-				"Front-end: React js, Hooks, Redux, Restful Apis, Git & Github, Jira, Google Workspaces.",
+				"Front-end: React, Hooks, Redux, Restful Apis, Git & Github, Jira, Google Workspaces.",
 			third: "Tools and Plugins: Draftjs, React-beautiful-DND",
 		},
 		1: {

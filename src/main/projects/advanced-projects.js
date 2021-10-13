@@ -5,9 +5,7 @@ import { Github } from "@styled-icons/boxicons-logos";
 import { ExternalLinkOutline } from "@styled-icons/evaicons-outline";
 
 import CarbonFootprint from "../../assets/carbon-footprint.png";
-import MarcoPolo from "../../assets/marco-polo.png";
 import Wanteat from "../../assets/wanteat.png";
-import NinjaSimulation from "../../assets/ninja-simulation.png";
 import AmmoTank from "../../assets/ammo-tank.png";
 import AmmoTankVideo from "../../assets/tank-ammo.mov";
 import { professionalProjects } from "../../data/projects";

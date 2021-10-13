@@ -128,7 +128,7 @@ const ParragraphDecoration = styled(TextDecoration)`
 `;
 
 const aboutData = [
-	"I am a software developer with 5 years of experience in Web Development, over 2 years experience in Backend development and over 3 years professional experience as a full-stack developer (Frontend heavy).",
+	"I am a software developer with over 5 years of experience in Software Development, over 2 years experience in Backend development and over 3 years professional experience as a full-stack developer (Frontend heavy).",
 	"My strongest skills are React, Angular, Php/Laravel, Nodejs(intermediate)",
 	"I am good at translating business requirements to technical implementations that are simple and clean with emphasis on user experience and engagement. I have worked in both start-up teams and large corporate environments,\
 	 and also had the opportunity of taking up leadership roles on vital projects",

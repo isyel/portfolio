@@ -9,12 +9,7 @@ import Candy from "../../assets/candy-shop.png";
 import ToDo from "../../assets/to-do.png";
 import SpaceBar from "../../assets/space-bar.png";
 import RGB from "../../assets/rgb-game.png";
-import Error404 from "../../assets/error-404.png";
-import MachineLearning from "../../assets/machine-learning.png";
-import Argonauts from "../../assets/argonauts.png";
-import Weather from "../../assets/weather.png";
-import Bitcoin from "../../assets/bitcoin.png";
-import BurgerApp from "../../assets/burger-app.png";
+import { personalProjects } from "../../data/projects";
 
 const Container = styled(motion.div)`
 	width: 100%;
@@ -32,6 +27,7 @@ const CardRow = styled(motion.div)`
 	align-items: center;
 	justify-content: space-evenly;
 	width: 100%;
+	flex-wrap: wrap;
 	padding: 1em 0;
 	@media only screen and (max-width: 450px) {
 		display: block;
@@ -41,10 +37,10 @@ const CardRow = styled(motion.div)`
 
 const Card = styled(motion.div)`
 	position: relative;
-	height: 380px;
 	width: 400px;
 	border-radius: 5px;
 	padding: 15px;
+	margin-bottom: 1em;
 	background: #ffffff14;
 	box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 3px 0px,
 		rgba(0, 0, 0, 0.06) 0px 10px 15px 0px;
@@ -130,10 +126,11 @@ const Explanation = styled.p`
 
 const Technology = styled.div`
 	font-family: "Roboto", sans-serif;
+	width: 70%;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: flex-start;
 	align-items: center;
-	width: 100%;
 `;
 
 const TechItems = styled.span`
@@ -198,184 +195,29 @@ const BeginnerProjects = () => {
 			animate={{ opacity: 1 }}
 			transition={{ duration: 0.4 }}>
 			<CardRow>
-				<Card>
-					<Link
-						githubLink="https://github.com/Achiaga/myBurgerApp"
-						externalLink="https://react-burger-app-maker.firebaseapp.com/"
-					/>
-					<ImgContainer>
-						<Img src={BurgerApp} alt="burger-app" />
-					</ImgContainer>
-					<TextContainer>
-						<Title>BurgerApp</Title>
-						<Explanation>
-							My first project in Reactjs from an online bootcamp. It is a web
-							where you can make your own burguer and purchase it.
-						</Explanation>
-						<Technology>
-							<TechItems>
-								<Hastag>#</Hastag>React
-							</TechItems>
-							<TechItems>
-								<Hastag>#</Hastag>Redux
-							</TechItems>
-							<TechItems>
-								<Hastag>#</Hastag>graphql
-							</TechItems>
-						</Technology>
-						<Technology>
-							<TechItems>
-								<Hastag>#</Hastag>Firebase
-							</TechItems>
-							<TechItems>
-								<Hastag>#</Hastag>Material-ui
-							</TechItems>
-						</Technology>
-					</TextContainer>
-				</Card>
-				<Card>
-					<Link
-						githubLink="https://github.com/Achiaga/bitcoinNotification"
-						externalLink="https://cryptoaddicts-00.firebaseapp.com/"
-					/>
-					<ImgContainer>
-						<Img src={Bitcoin} alt="bitcoin" />
-					</ImgContainer>
-					<TextContainer>
-						<Title>Crypto</Title>
-						<Explanation>
-							A MERN web about crypto price with users dynamic interaction.
-						</Explanation>
-						<Technology>
-							<TechItems>
-								<Hastag>#</Hastag>React
-							</TechItems>
-							<TechItems>
-								<Hastag>#</Hastag>Firebase
-							</TechItems>
-							<TechItems>
-								<Hastag>#</Hastag>Heroku
-							</TechItems>
-							<TechItems>
-								<Hastag>#</Hastag>Api
-							</TechItems>
-						</Technology>
-						<Technology>
-							<TechItems>
-								<Hastag>#</Hastag>graphql
-							</TechItems>
-							<TechItems>
-								<Hastag>#</Hastag>CSS
-							</TechItems>
-						</Technology>
-					</TextContainer>
-				</Card>
-			</CardRow>
-			<CardRow>
-				<Card>
-					<Link
-						githubLink="https://github.com/Achiaga/MachineLearningPage"
-						externalLink="https://github.com/Achiaga/MachineLearningPage"
-					/>
-					<ImgContainer>
-						<Img src={MachineLearning} alt="machine-learning" />
-					</ImgContainer>
-					<TextContainer>
-						<Title>Web Design</Title>
-						<Explanation>
-							A simple web design about a machine learning company.
-						</Explanation>
-						<Technology>
-							<TechItems>
-								<Hastag>#</Hastag>React
-							</TechItems>
-							<TechItems>
-								<Hastag>#</Hastag>CSS
-							</TechItems>
-						</Technology>
-					</TextContainer>
-				</Card>
-				<Card>
-					<Link
-						githubLink="https://github.com/Achiaga/Weather-App"
-						externalLink="https://achiaga.github.io/Weather-App/"
-					/>
-					<ImgContainer>
-						<Img src={Weather} alt="weather" />
-					</ImgContainer>
-					<TextContainer>
-						<Title>Weather</Title>
-						<Explanation>
-							A web about the weather in differents cities
-						</Explanation>
-						<Technology>
-							<TechItems>
-								<Hastag>#</Hastag>React
-							</TechItems>
-							<TechItems>
-								<Hastag>#</Hastag>Redux
-							</TechItems>
-							<TechItems>
-								<Hastag>#</Hastag>API
-							</TechItems>
-							<TechItems>
-								<Hastag>#</Hastag>CSS
-							</TechItems>
-						</Technology>
-					</TextContainer>
-				</Card>
-			</CardRow>
-			<CardRow>
-				<Card>
-					<Link
-						githubLink="https://github.com/Achiaga/Argonauts"
-						externalLink="https://argonauts-gamers.herokuapp.com/"
-					/>
-					<ImgContainer>
-						<Img src={Argonauts} alt="argonauts" />
-					</ImgContainer>
-					<TextContainer>
-						<Title>Argonauts</Title>
-						<Explanation>A web about posting your favorite games.</Explanation>
-						<Technology>
-							<TechItems>
-								<Hastag>#</Hastag>Javascript
-							</TechItems>
-							<TechItems>
-								<Hastag>#</Hastag>Heroku
-							</TechItems>
-							<TechItems>
-								<Hastag>#</Hastag>CSS
-							</TechItems>
-							<TechItems>
-								<Hastag>#</Hastag>API
-							</TechItems>
-						</Technology>
-					</TextContainer>
-				</Card>
-				<Card>
-					<Link
-						githubLink="https://github.com/Achiaga/Error404_PureAnimation"
-						externalLink="https://error404.vercel.app/"
-					/>
-					<ImgContainer>
-						<Img src={Error404} alt="error-404" />
-					</ImgContainer>
-					<TextContainer>
-						<Title>Error 404</Title>
-						<Explanation>
-							An Error 404 page inspired in "Mr. Robot".
-						</Explanation>
-						<Technology>
-							<TechItems>
-								<Hastag>#</Hastag>React
-							</TechItems>
-							<TechItems>
-								<Hastag>#</Hastag>CSS
-							</TechItems>
-						</Technology>
-					</TextContainer>
-				</Card>
+				{personalProjects.map((project) => (
+					<Card>
+						<Link
+							githubLink={project.links.github}
+							externalLink={project.links.external}
+						/>
+						<ImgContainer>
+							<Img src={project.image} alt={project.title} />
+						</ImgContainer>
+						<TextContainer>
+							<Title>{project.title}</Title>
+							<Explanation>{project.description}</Explanation>
+							<Technology>
+								{project.technologies.map((technology) => (
+									<TechItems>
+										<Hastag>#</Hastag>
+										{technology}
+									</TechItems>
+								))}
+							</Technology>
+						</TextContainer>
+					</Card>
+				))}
 			</CardRow>
 			{!showMore && (
 				<ButtonContainer>
@@ -387,7 +229,7 @@ const BeginnerProjects = () => {
 					</ButtonShow>
 				</ButtonContainer>
 			)}
-			{showMore && (
+			{showMore && 2 === 5 && (
 				<>
 					<CardRow>
 						<Card>

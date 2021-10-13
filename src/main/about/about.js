@@ -1,6 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import { motion } from 'framer-motion';
+/* eslint-disable no-multi-str */
+import React from "react";
+import styled from "styled-components";
+import { motion } from "framer-motion";
 
 const Container = styled(motion.section)`
 	padding-top: 140px;
@@ -12,7 +13,7 @@ const Container = styled(motion.section)`
 	min-height: 100vh;
 	color: ${(props) => props.theme.colors.letter};
 	overflow: hidden;
-	font-family: 'Asap', sans-serif;
+	font-family: "Asap", sans-serif;
 	@media only screen and (max-width: 450px) {
 		padding-left: 23px;
 		padding-right: 23px;
@@ -41,14 +42,14 @@ const TitleText = styled.h1`
 	padding-right: 0.7em;
 	padding-left: 1em;
 	color: ${(props) => props.theme.colors.letter};
-	font-family: 'Calibre', sans-serif;
+	font-family: "Calibre", sans-serif;
 	@media only screen and (max-width: 450px) {
 		font-size: 22px;
 	}
 `;
 
 const Line = styled.div`
-	content: '';
+	content: "";
 	display: block;
 	width: 70%;
 	height: 0px;
@@ -84,7 +85,7 @@ const TextContainer = styled.div`
 const Text = styled.p`
 	font-family: ui-monospace;
 	margin: 0;
-	padding-bottom: ${(props) => (props.space ? '1em' : '0')};
+	padding-bottom: ${(props) => (props.space ? "1em" : "0")};
 	font-size: 20px;
 	text-align: justify;
 	padding-left: 1em;
@@ -127,19 +128,19 @@ const ParragraphDecoration = styled(TextDecoration)`
 `;
 
 const aboutData = [
-	"I'm currently looking for new opportunities. I'm always open to new projects, ideas, job opportunities and new connections. I love building new stuff so just send me a message and I will answer you 100%.",
-	'I have a profound passion for programming and new technology. I love to learn new things and build stuff. I studied mechanical engineer although I always like computers, learning programming started as a hobby, until I decided to make the big step and change my whole career into programming.',
-	"I don't like to quit. Once I start something I finish it, so instead of dropping out of college to pursue my dream of being a programmer, I decided to finish my mechanical engineer degree while learning and working as a programmer.",
-	"My preferable area is frontend using Reactjs, I love how React makes it so easy to improve the user's experience. As an engineer, I like UX and the balance between UI and UX. I love to build nice looking easy to use responsive web sites. I don't mind getting my hands on other areas if needed like backend but my area of expertise is frontend.",
-	'Switching carrers is the best decission I have ever made and I am so happy with it. I am a happy person who enjoys work. So my dream company would be one with a really good enviroment with my coworkers.',
+	"I am a software developer with 5 years of experience in Web Development, over 2 years experience in Backend development and over 3 years professional experience as a full-stack developer (Frontend heavy).",
+	"My strongest skills are React, Angular, Php/Laravel, Nodejs(intermediate)",
+	"I am good at translating business requirements to technical implementations that are simple and clean with emphasis on user experience and engagement. I have worked in both start-up teams and large corporate environments,\
+	 and also had the opportunity of taking up leadership roles on vital projects",
+	"I am looking for new challenges and opportunities with a company that moves fast and wants to make a real impact, so I can contribute my utmost best, and help take the company to the next level.",
 ];
 
-const AboutParragraphSeparation = ({ index }) => {
+const AboutParagraphSeparation = ({ index }) => {
 	if (index % 2 === 0) return null;
 	return (
 		<>
 			<br />
-			<TextDecoration>{'<br/>'}</TextDecoration>
+			<TextDecoration>{"<br/>"}</TextDecoration>
 			<br />
 		</>
 	);
@@ -157,10 +158,10 @@ const About = ({ aboutRef }) => {
 					{aboutData.map((textParragraph, index) => {
 						return (
 							<div key={index}>
-								<ParragraphDecoration>{'<p>'} </ParragraphDecoration>
+								<ParragraphDecoration>{"<p>"} </ParragraphDecoration>
 								<Text>{textParragraph}</Text>
-								<ParragraphDecoration>{'</p>'} </ParragraphDecoration>
-								<AboutParragraphSeparation index={index} />
+								<ParragraphDecoration>{"</p>"} </ParragraphDecoration>
+								<AboutParagraphSeparation index={index} />
 							</div>
 						);
 					})}

@@ -5,9 +5,9 @@ import { Github } from "@styled-icons/boxicons-logos";
 import { ExternalLinkOutline } from "@styled-icons/evaicons-outline";
 
 import CarbonFootprint from "../../assets/carbon-footprint.png";
-import Wanteat from "../../assets/wanteat.png";
-import AmmoTank from "../../assets/ammo-tank.png";
-import AmmoTankVideo from "../../assets/tank-ammo.mov";
+// import Wanteat from "../../assets/wanteat.png";
+// import AmmoTank from "../../assets/ammo-tank.png";
+// import AmmoTankVideo from "../../assets/tank-ammo.mov";
 import { professionalProjects } from "../../data/projects";
 
 const Container = styled(motion.div)`
@@ -71,24 +71,24 @@ const ImgContainer = styled.div`
 	}
 `;
 
-const VideoContainer = styled.div`
-	position: absolute;
-	top: 19px;
-	left: 80px;
-	width: 200px;
-	height: 100px;
-	@media only screen and (max-width: 450px) {
-		top: 9px;
-		left: 39px;
-	}
+// const VideoContainer = styled.div`
+// 	position: absolute;
+// 	top: 19px;
+// 	left: 80px;
+// 	width: 200px;
+// 	height: 100px;
+// 	@media only screen and (max-width: 450px) {
+// 		top: 9px;
+// 		left: 39px;
+// 	}
 
-	video {
-		width: 395px;
-		@media only screen and (max-width: 450px) {
-			width: 186px;
-		}
-	}
-`;
+// 	video {
+// 		width: 395px;
+// 		@media only screen and (max-width: 450px) {
+// 			width: 186px;
+// 		}
+// 	}
+// `;
 
 const Img = styled.img`
 	height: 100%;
@@ -195,7 +195,10 @@ const AdvancedProjects = ({ isMobile }) => {
 						<Row>
 							<LeftRow text={false}>
 								<ImgContainer>
-									<Img src={CarbonFootprint} alt="carbon-footprint" />
+									<Img
+										src={project.image || CarbonFootprint}
+										alt="carbon-footprint"
+									/>
 								</ImgContainer>
 							</LeftRow>
 							<RightRow text={true}>
@@ -269,13 +272,16 @@ const AdvancedProjects = ({ isMobile }) => {
 							</LeftRow>
 							<RightRow text={false}>
 								<ImgContainer>
-									<Img src={Wanteat} alt="wanteat" />
+									<Img
+										src={project.image || CarbonFootprint}
+										alt={project.title}
+									/>
 								</ImgContainer>
 							</RightRow>
 						</Row>
 					);
 			})}
-			<Row>
+			{/* <Row>
 				<LeftRow text={false}>
 					<ImgContainer>
 						<Img src={AmmoTank} alt="ammo-tank" />
@@ -313,7 +319,7 @@ const AdvancedProjects = ({ isMobile }) => {
 						</Technology>
 					</Card>
 				</RightRow>
-			</Row>
+			</Row> */}
 		</Container>
 	);
 };

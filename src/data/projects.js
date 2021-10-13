@@ -6,7 +6,8 @@ export const professionalProjects = [
 			"A tool (similar to Trello and Jira Boards) with drag and drop features for managing tasks and suppliers.\
          Tasks could be created as cards on a board,\
           users can be added to a card and have different access levels(admin, user and commenters).",
-		image: "",
+		image:
+			"https://storage.googleapis.com/turing_developers/portfolio/1627303772611_pipelines_board.png",
 		technologies: [
 			"React",
 			"Javascript",
@@ -42,12 +43,13 @@ export const professionalProjects = [
 		],
 	},
 	{
-		title: "Demand Service Provider App",
+		title: "On Demand Service Provider App",
 		description:
 			"A mobile application to help people find professional and trusted artisans in their locality for home facilities repairs and installments. \
         The application had features like Quote creation and generation, \
         merchants management and location management to help find the nearest available provider for a user's request.",
-		image: "",
+		image:
+			"https://storage.googleapis.com/turing_developers/portfolio/1619262739507_phone9.png",
 		technologies: ["Angular", "Typescript", "Firebase", "Git", "BitBucket"],
 		links: [
 			{
@@ -66,7 +68,8 @@ export const professionalProjects = [
 			"A web and mobile based platform that helps Educational Institutions in managing their daily activities, \
         students, staff, exams, lessons, attendance, etc. Developed using React, Ionic/Angular \
         JWT for user authentication and Context API for state management and Sails.js for server side.",
-		image: "",
+		image:
+			"https://storage.googleapis.com/turing_developers/portfolio/1619263210940_skoorep.png",
 		technologies: [
 			"Ionic",
 			"Angular",

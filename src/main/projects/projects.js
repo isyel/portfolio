@@ -42,7 +42,7 @@ const TitleText = styled.h1`
 	font-size: 32px;
 	padding-right: 0.7em;
 	padding-left: 1em;
-	color: palevioletred;
+	color: #00ef00;
 	font-family: "Calibre", sans-serif;
 	@media only screen and (max-width: 450px) {
 		font-size: 22px;
@@ -75,7 +75,8 @@ const ButtonContainer = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	width: 22%;
+	width: 250px;
+	max-width: 50%;
 	padding: 0em 1.5em;
 	border-radius: 5px;
 	background: #ffffff14;
@@ -106,7 +107,7 @@ const BackgroundButton = styled(motion.div)`
 	width: 120%;
 	height: 170%;
 	border-radius: 5px;
-	background: #db7192bf;
+	background: green;
 	position: absolute;
 	z-index: -1;
 	left: -11px;
@@ -158,7 +159,7 @@ const Projects = ({ projectRef }) => {
 							onClick={handleProjects}
 							id="advanced">
 							{showAdvanced && <BackgroundButton layoutId="underline" />}
-							Advanced
+							Professional
 						</Button>
 						<Button
 							whileHover={{
@@ -169,7 +170,7 @@ const Projects = ({ projectRef }) => {
 							onClick={handleProjects}
 							id="beginner">
 							{!showAdvanced && <BackgroundButton layoutId="underline" />}
-							Beginner
+							Personal
 						</Button>
 					</ButtonContainer>
 				</AnimateSharedLayout>

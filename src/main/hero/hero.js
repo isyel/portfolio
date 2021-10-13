@@ -9,7 +9,7 @@ const Container = styled(motion.section)`
 	padding-left: 170px;
 	margin: 0px auto;
 	/* max-width: 1600px; */
-	min-height: 75vh;
+	min-height: 500px;
 	@media only screen and (max-height: 650px) {
 		padding-top: 100px;
 	}

@@ -10,6 +10,7 @@ import Wanteat from "../../assets/wanteat.png";
 import NinjaSimulation from "../../assets/ninja-simulation.png";
 import AmmoTank from "../../assets/ammo-tank.png";
 import AmmoTankVideo from "../../assets/tank-ammo.mov";
+import { professionalProjects } from "../../data/projects";
 
 const Container = styled(motion.div)`
 	padding-top: 2em;
@@ -53,8 +54,6 @@ const RightRow = styled.div`
 	align-items: center;
 	justify-content: ${(props) => (props.text ? "flex-start" : "flex-end")};
 	width: ${(props) => (props.text ? "50%" : "50%")};
-	height: 200px;
-	height: ${(props) => (props.text ? "300px" : "250px")};
 	border-radius: 5px;
 	padding: 15px;
 	@media only screen and (max-width: 450px) {
@@ -147,6 +146,7 @@ const Technology = styled.div`
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
+	flex-wrap: wrap;
 	width: 100%;
 `;
 const TechItems = styled.span`
@@ -191,222 +191,92 @@ const AdvancedProjects = ({ isMobile }) => {
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
 			transition={{ duration: 0.4 }}>
-			<Row>
-				<LeftRow text={false}>
-					<ImgContainer>
-						<Img src={CarbonFootprint} alt="carbon-footprint" />
-					</ImgContainer>
-				</LeftRow>
-				<RightRow text={true}>
-					<Card>
-						<Title>Carbon Footprint Calculator</Title>
-						<Description>
-							An open-source project about calculating the carbon foootprint for
-							individuals and small companies.
-						</Description>
-						<Technology>
-							<TechItems>
-								<Hastag>#</Hastag>React
-							</TechItems>
-							<TechItems>
-								<Hastag>#</Hastag>Hooks
-							</TechItems>
-							<TechItems>
-								<Hastag>#</Hastag>Styled-components
-							</TechItems>
-						</Technology>
-						<Technology>
-							<TechItems>
-								<Hastag>#</Hastag>React-three-fiber
-							</TechItems>
-							<TechItems>
-								<Hastag>#</Hastag>Material-ui
-							</TechItems>
-						</Technology>
-						<ButtonContainer>
-							<a
-								href="https://github.com/Achiaga/carbon_footprint"
-								target="_blank"
-								rel="noopener noreferrer">
-								<Button
-									whileHover={{ y: [0, -8, 0], color: "#00ef00" }}
-									transition={{ duration: 0.5 }}>
-									<Github />
-								</Button>
-							</a>
-							<a
-								href="https://footprint.now.sh/"
-								target="_blank"
-								rel="noopener noreferrer">
-								<Button
-									whileHover={{ y: [0, -8, 0], color: "#00ef00" }}
-									transition={{ duration: 0.5 }}>
-									<ExternalLinkOutline />
-								</Button>
-							</a>
-						</ButtonContainer>
-					</Card>
-				</RightRow>
-			</Row>
-			<Row revert={true}>
-				<LeftRow text={true}>
-					<Card>
-						<Title>Wanteat App</Title>
-						<Description>
-							Healthy mealplan generator to maintain your diet without getting
-							bored.
-						</Description>
-						<Technology>
-							<TechItems>
-								<Hastag>#</Hastag>React
-							</TechItems>
-							<TechItems>
-								<Hastag>#</Hastag>Hooks
-							</TechItems>
-							<TechItems>
-								<Hastag>#</Hastag>Styled-components
-							</TechItems>
-						</Technology>
-						<Technology>
-							<TechItems>
-								<Hastag>#</Hastag>Api
-							</TechItems>
-							<TechItems>
-								<Hastag>#</Hastag>Fauna
-							</TechItems>
-						</Technology>
-						<ButtonContainer>
-							<a
-								href="https://wanteat.app/"
-								target="_blank"
-								rel="noopener noreferrer">
-								<Button
-									whileHover={{ y: [0, -8, 0], color: "#00ef00" }}
-									transition={{ duration: 0.5 }}>
-									<ExternalLinkOutline />
-								</Button>
-							</a>
-						</ButtonContainer>
-					</Card>
-				</LeftRow>
-				<RightRow text={false}>
-					<ImgContainer>
-						<Img src={Wanteat} alt="wanteat" />
-					</ImgContainer>
-				</RightRow>
-			</Row>
-			<Row>
-				<LeftRow text={false}>
-					<ImgContainer>
-						<Img src={NinjaSimulation} alt="ninja-simulation" />
-					</ImgContainer>
-				</LeftRow>
-				<RightRow text={true}>
-					<Card>
-						<Title>Ninja Simulation</Title>
-						<Description>
-							A threejs project to show graphically differents statistics'
-							theories. So the user can visualize them. The objective is to
-							build a web that can take statics' theories as input and run them
-							graphically automatically.
-						</Description>
-						<Technology>
-							<TechItems>
-								<Hastag>#</Hastag>Javascript
-							</TechItems>
-							<TechItems>
-								<Hastag>#</Hastag>Threejs
-							</TechItems>
-							<TechItems>
-								<Hastag>#</Hastag>Webpack
-							</TechItems>
-							<TechItems>
-								<Hastag>#</Hastag>Blender
-							</TechItems>
-						</Technology>
-						<ButtonContainer>
-							<a
-								href="https://github.com/Achiaga/Analytics_simulations"
-								target="_blank"
-								rel="noopener noreferrer">
-								<Button
-									whileHover={{ y: [0, -8, 0], color: "#00ef00" }}
-									transition={{ duration: 0.5 }}>
-									<Github />
-								</Button>
-							</a>
-							<a
-								href="https://analytics-simulations.vercel.app/"
-								target="_blank"
-								rel="noopener noreferrer">
-								<Button
-									whileHover={{ y: [0, -8, 0], color: "#00ef00" }}
-									transition={{ duration: 0.5 }}>
-									<ExternalLinkOutline />
-								</Button>
-							</a>
-						</ButtonContainer>
-					</Card>
-				</RightRow>
-			</Row>
-			<Row revert={true}>
-				<LeftRow text={true}>
-					<Card>
-						<Title>Marco Polo</Title>
-						<Description>
-							A project is to see graphically how many countries you have
-							visited and the percentage of the world you have visited. You can
-							also share it with friends to see who is the most adventurous.
-						</Description>
-						<Technology>
-							<TechItems>
-								<Hastag>#</Hastag>React
-							</TechItems>
-							<TechItems>
-								<Hastag>#</Hastag>Hooks
-							</TechItems>
-							<TechItems>
-								<Hastag>#</Hastag>Styled-components
-							</TechItems>
-						</Technology>
-						<Technology>
-							<TechItems>
-								<Hastag>#</Hastag>Datamaps
-							</TechItems>
-							<TechItems>
-								<Hastag>#</Hastag>Jsonwebtoke
-							</TechItems>
-						</Technology>
-						<ButtonContainer>
-							<a
-								href="https://github.com/Achiaga/marco-polo"
-								target="_blank"
-								rel="noopener noreferrer">
-								<Button
-									whileHover={{ y: [0, -8, 0], color: "#00ef00" }}
-									transition={{ duration: 0.5 }}>
-									<Github />
-								</Button>
-							</a>
-							<a
-								href="https://mytrips.now.sh/"
-								target="_blank"
-								rel="noopener noreferrer">
-								<Button
-									whileHover={{ y: [0, -8, 0], color: "#00ef00" }}
-									transition={{ duration: 0.5 }}>
-									<ExternalLinkOutline />
-								</Button>
-							</a>
-						</ButtonContainer>
-					</Card>
-				</LeftRow>
-				<RightRow text={false}>
-					<ImgContainer>
-						<Img src={MarcoPolo} alt="marco-polo" />
-					</ImgContainer>
-				</RightRow>
-			</Row>
+			{professionalProjects.map((project, index) => {
+				if (index % 2 === 0)
+					return (
+						<Row>
+							<LeftRow text={false}>
+								<ImgContainer>
+									<Img src={CarbonFootprint} alt="carbon-footprint" />
+								</ImgContainer>
+							</LeftRow>
+							<RightRow text={true}>
+								<Card>
+									<Title>{project.title}</Title>
+									<Description>{project.description}</Description>
+									<Technology>
+										{project.technologies.map((technology) => (
+											<TechItems>
+												<Hastag>#</Hastag>
+												{technology}
+											</TechItems>
+										))}
+									</Technology>
+									<ButtonContainer>
+										{project.links.map((linkData) => (
+											<a
+												href={linkData.link}
+												target="_blank"
+												rel="noopener noreferrer">
+												<Button
+													whileHover={{ y: [0, -8, 0], color: "#00ef00" }}
+													transition={{ duration: 0.5 }}>
+													{linkData.type === "github" ? (
+														<Github />
+													) : (
+														<ExternalLinkOutline />
+													)}
+												</Button>
+											</a>
+										))}
+									</ButtonContainer>
+								</Card>
+							</RightRow>
+						</Row>
+					);
+				else
+					return (
+						<Row revert={true}>
+							<LeftRow text={true}>
+								<Card>
+									<Title>{project.title}</Title>
+									<Description>{project.description}</Description>
+									<Technology>
+										{project.technologies.map((technology) => (
+											<TechItems>
+												<Hastag>#</Hastag>
+												{technology}
+											</TechItems>
+										))}
+									</Technology>
+									<ButtonContainer>
+										{project.links.map((linkData) => (
+											<a
+												href={linkData.link}
+												target="_blank"
+												rel="noopener noreferrer">
+												<Button
+													whileHover={{ y: [0, -8, 0], color: "#00ef00" }}
+													transition={{ duration: 0.5 }}>
+													{linkData.type === "github" ? (
+														<Github />
+													) : (
+														<ExternalLinkOutline />
+													)}
+												</Button>
+											</a>
+										))}
+									</ButtonContainer>
+								</Card>
+							</LeftRow>
+							<RightRow text={false}>
+								<ImgContainer>
+									<Img src={Wanteat} alt="wanteat" />
+								</ImgContainer>
+							</RightRow>
+						</Row>
+					);
+			})}
 			<Row>
 				<LeftRow text={false}>
 					<ImgContainer>

@@ -62,9 +62,9 @@ const ColumnText = styled(motion.span)`
 `;
 
 const listSkills = [
-	["#Reactjs", "#Styled Components", "#Javascript", "#Bootstrap"],
-	["#Redux", "#CSS", "#HTML5", "#Hooks"],
-	["#Threejs", "#Rest API", "#Framer Motion", "#Enzyme"],
+	["#Reactjs", "#Javascript", "#SCSS", "#Bootstrap", "Draftjs", "Git"],
+	["#Redux", "#Typescript", "#HTML5", "#Hooks", "Php/Laravel"],
+	["#Angular", "#Hooks", "#GraphQL", "#React Testing Library", "Nodejs"],
 ];
 
 const Education = () => {

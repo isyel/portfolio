@@ -1,97 +1,80 @@
+/* eslint-disable no-multi-str */
 export const dataExperience = {
 	list: {
 		0: {
-			main: 'Frontend React Engineer',
+			main: "Frontend React Engineer",
 		},
 		1: {
-			main: 'Frontend Engineer',
+			main: "Software Engineer",
 		},
 		2: {
-			main: 'Product Engineer Intern',
+			main: "Web Developer",
 		},
 		3: {
-			main: 'Robotics Monitor',
-		},
-		4: {
-			main: 'Assistant Mechanic',
-		},
-		5: {
-			main: 'Basketball Referee',
+			main: "Java Developer",
 		},
 	},
 	info: {
 		0: {
-			link: 'https://wanteat.app/',
-			title: '@Wanteat App 😋',
-			date: 'Freelance | Jan 2020 - present',
+			link: "http://innoloft.com/",
+			title: "@Innoloft GmBH 💼",
+			date: "Feb 2021 - present",
 			first:
-				'Wanteat App is a serverless application using FaunaDB. I design and develop the front-end web application using Reactjs. Focusing on the UX design. I also handle normalize and denormalize data in the frontend.',
-			second: 'Front-end: React js, Hooks, Redux, styled-components, Restful Apis, Git & Github.',
-			third: 'Testing: Enzyme, Jests',
+				"I serve as a frontend developer where my primary objective was the development of a pipeline tool \
+				(Similar to Trello and Jira Board) that was used internally by the innoloft team, \
+				and also offered as a premium service (LoftOS) to Innoloft partners.",
+			second:
+				"Front-end: React js, Hooks, Redux, Restful Apis, Git & Github, Jira, Google Workspaces.",
+			third: "Tools and Plugins: Draftjs, React-beautiful-DND",
 		},
 		1: {
-			link: 'https://www.linkedin.com/company/hoomis/',
-			title: '@Hoomis 🏘',
-			date: 'Freelance | May 2018 - Feb 2019',
+			link: "https://web.ecagon.com/",
+			title: "@Ecagon Technologies 🖥",
+			date: "Feb 2019 - Dec 2020",
 			first:
-				"Designed, developed and deployed the front-end. Focusing on handling Google Maps API and creating search filters for user's house searches improving user's experience.",
+				"I served as a Technical Team Lead for the Product development in over 5 projects across different industries(Ecommerce, Media and Real Estate). \
+				My primary objective was ensuring that feature implementations went smoothly from business requirement to technical implementation, \
+				without deviating from the expectations expressed (or implied) by the product owners.",
 			second:
-				'Front-end: React framework, Redux to manage states, Material-UI, Google Maps Api,Restful Api, Git & Github',
-			third: 'Testing: Enzyme, Jests',
+				"Front-end: React, Angular, Ionic, Redux, Context Api, Bootstrap, Material-UI, Restful Api, Git & Github, Bitbucket",
+			third: "Back-end: Php/Laravel, Nodejs",
+			fourth: "Testing: Jest, React Testing Library",
 		},
 		2: {
-			link: 'https://www.grupoantolin.com/',
-			title: '@Antolin 🚘',
-			date: 'Intern | Dec 2019 - March 2020',
+			link: "https://caltech-ltd.com/",
+			title: "@Caltech Integrated Services 🏗",
+			date: "Jan 2018 - Aug 2019",
 			first:
-				'My work in Antolin corresponds to an intership needed to finish my degree in mechanical engineer.',
-			second:
-				'My role in the company was of a product engineer intern responsible of the output of the product from the manufacturing ',
-			third:
-				'Handling the different changes of the product through the manufactoring process with the different countries where the different parts of the product came from.',
+				"I served as a Web Engineer for the software development team. \
+				I worked on developing front facing web applications for Caltech clients and also helped to build applications to manage day to day activities for companies across the Oil & Gas and Bio Medicals Industry, which Caltech Integrated serves.",
+			second: "Technologies: Php/Laravel, Wordpress, Angular, React, Ionic",
+			third: "Other Technologies Used: Odoo, Python/Flask",
 		},
 		3: {
-			link: 'https://robotixcyl.com/',
-			title: '@Lego Education Robotix  🤖',
-			date: 'Jul 2017 - Aug 2017',
-			first: 'My work corresponds to a summer job while studying in college.',
-			second: "My role was to teach kids how to 'program' differents robots of Lego to do different tasks.",
-		},
-		4: {
-			link: 'https://www.uralmotor.com/es',
-			title: '@Volkswagen  🚘',
-			date: 'Aug 2016 - Aug 2016',
-			first: 'My work corresponds to a summer job while studying in college.',
-			second:
-				'My role was helping the main mechanic to achieve differents tasks from oil changes to engine repairs.',
-		},
-		5: {
-			link: '',
-			title: 'Basketball Referee  🏀',
-			date: 'Sep 2013 - May 2015',
+			link: "https://cwg-plc.com/",
+			title: "@CWG, Plc  🤖",
+			date: "Feb 2017 - Dec 2017",
 			first:
-				'I worked as a referee of kids basketball leagues when I was around 15 years while a I played basketball in regional league.',
+				"Interned with Computer Warehouse Group[CWG] Lagos, which helped me develop my knowledge across various fields one of which was a Banking Application(Finacle by Infosys).\
+			In my latter days i engaged with the software development team working with Java and Android Studio",
+			second:
+				"Key Accomplishments: Supported the team that developed “bills & pay” mobile application using Java, \
+			Worked with Version Control (Git) to manage projects across board (Bitbucket)",
 		},
 	},
 };
 
 export const dataEducation = {
 	0: {
-		main: 'Burgos University 🇪🇸',
-		expand: 'Mechanical Engineer Degree',
-		date: '( 2016 / 2020 )',
-		country: 'Spain',
+		main: "Karunya University, IN",
+		expand: "Computer Science Engineering",
+		date: "( 2012 - 2016 )",
+		country: "India",
 	},
 	1: {
-		main: 'Linnaeus University 🇸🇪',
-		expand: 'Mechanical Engineer Degree',
-		date: '( 2017 / 2018 )',
-		country: 'Sweden',
-	},
-	2: {
-		main: 'Kookmin University 🇰🇷',
-		expand: 'Mechanical Engineer Degree',
-		date: '( 2018 / 2019 )',
-		country: 'South Korea',
+		main: "IMT Enugu, NG",
+		expand: "Mechanical Engineer Diploma",
+		date: "( 2009 - 2011 )",
+		country: "Nigeria",
 	},
 };

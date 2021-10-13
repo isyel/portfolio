@@ -203,15 +203,21 @@ const Hero = ({ didScroll, handleToast, heroRef }) => {
 	const description =
 		// eslint-disable-next-line no-multi-str
 		"I'm a full stack software engineer (frontend heavy). \
-		I'm 28 years old. I have lived in 🇪🇸 🇸🇪 🇰🇷 . \
-		I like building and designing exceptional web and mobile applications that are not just visually appealing, but also user engaging.  \
-		I speak fluently  🇺🇸.";
+		I'm 28 years old. I have lived in Lagos, Nigeria. \
+		I love building and designing exceptional web and mobile applications that are not just visually appealing, but also user engaging.  \
+		I speak fluently English.";
 
 	return (
 		<Container ref={heroRef}>
 			<Content>
 				<Intro>
-					<FirstTitle>My name is,</FirstTitle>
+					<FirstTitle>
+						Hi{" "}
+						<span role="img" aria-label="wave">
+							👋
+						</span>
+						, my name is,
+					</FirstTitle>
 					<Title
 						drag
 						dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}

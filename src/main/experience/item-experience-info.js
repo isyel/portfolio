@@ -9,7 +9,7 @@ const ExperienceInfo = styled(motion.div)`
 	background: ${(props) => props.theme.colors.secondary};
 	border-radius: 8px;
 	padding: 1em;
-	height: 292px;
+	height: auto;
 	box-shadow: 2px 2px 12px rgb(0 0 0);
 	@media only screen and (max-width: 450px) {
 		width: 90%;

@@ -26,7 +26,7 @@ export const professionalProjects = [
 	{
 		title: "Innoloft Forms",
 		description: "",
-		image: "",
+		image: "/inno_forms.png",
 		technologies: [
 			"React",
 			"Javascript",
@@ -92,7 +92,7 @@ export const professionalProjects = [
 			"A web-based platform that helps Educational Institutions in managing their daily activities, students, staff, exams,\
          lessons, attendance, etc. The platform can be used at any school level, as it can be configured to suit any school structure, \
          from elementary to tertiary institution.",
-		image: "",
+		image: "/ecagon_sms.png",
 		technologies: ["Javascript", "Jquery", "Html5", "Php", "Git"],
 		links: [],
 	},

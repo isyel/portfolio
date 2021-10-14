@@ -203,7 +203,7 @@ const Hero = ({ didScroll, handleToast, heroRef }) => {
 	const description =
 		// eslint-disable-next-line no-multi-str
 		"I'm a full stack software engineer (frontend heavy). \
-		I'm 28 years old. I have lived in Lagos, Nigeria. \
+		I'm 28 years old. I stay in Lagos, Nigeria. \
 		I love building and designing exceptional web and mobile applications that are not just visually appealing, but also user engaging.  \
 		I speak fluently English.";
 

@@ -1,7 +1,7 @@
 # My Portfolio
 
-[![N|Solid](MBD_admin_preview.png)](https://practical-colden-f2d469.netlify.app/)
+[![N|Solid](portfolio_website.png)](https://portfolio-isyel.vercel.app/)
 
 > #### Hero of the Page
 
-Hi, my name is Israel. This is my portfolio for a frontend developer. **_Reactjs & CSS._**
+Hi, my name is Israel. This is my portfolio for a frontend developer. **_Reactjs, styled-components & CSS._**

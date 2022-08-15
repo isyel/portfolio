@@ -1,11 +1,33 @@
 /* eslint-disable no-multi-str */
 export const professionalProjects = [
   {
+    title: "360dialog Insights & Billing",
+    description:
+      "A dashboard for visualizing conversation metrics between business and their customers, \
+      providing insights into conversation types (Free and paid) and billing period.",
+    image:
+      "https://storage.googleapis.com/turing_developers/portfolio/1652638824236_Bildschirmfoto%202022-02-24%20um%2017.20.33.png",
+    technologies: [
+      "React",
+      "Typescript",
+      "Hooks",
+      "Mobx",
+      "Styled-components",
+      "Storybook",
+    ],
+    links: [
+      {
+        type: "external",
+        link: "http://innoloft.com/",
+      },
+    ],
+  },
+  {
     title: "LoftOS Pipelines",
     description:
-      "A tool (similar to Trello and Jira Boards) with drag and drop features for managing tasks and suppliers.\
-         Tasks could be created as cards on a board,\
-          users can be added to a card and have different access levels(admin, user and commenters).",
+      "A tool (similar to Trello and Jira Boards) with drag and drop features \
+      for managing tasks and suppliers. Tasks could be created as cards on a board,\
+      users can be added to a card and have different access levels(admin, user and commenters).",
     image:
       "https://storage.googleapis.com/turing_developers/portfolio/1627303772611_pipelines_board.png",
     technologies: [
@@ -14,7 +36,7 @@ export const professionalProjects = [
       "Hooks",
       "Redux",
       "Draftjs",
-      "React-DND",
+      "React-beautiful-DND",
     ],
     links: [
       {

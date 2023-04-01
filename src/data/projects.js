@@ -1,6 +1,27 @@
 /* eslint-disable no-multi-str */
 export const professionalProjects = [
   {
+    title: "InnoPrograms",
+    description:
+      "A programs module integrated with the Innoloft ecosystem, that allows companies create their own customized programs and lessons dashboard, and customize various aspects to their specific needs, showing progress of participants and managing tasks assignments for each chapters and lesson.",
+    image:
+      "https://storage.googleapis.com/turing_developers/portfolio/1652638824236_Bildschirmfoto%202022-02-24%20um%2017.20.33.png",
+    technologies: [
+      "React",
+      "Javascript",
+      "Hooks",
+      "Redux",
+      "Storybook",
+      "React-beautiful-DND",
+    ],
+    links: [
+      {
+        type: "external",
+        link: "http://innoloft.com/programs",
+      },
+    ],
+  },
+  {
     title: "360dialog Insights & Billing",
     description:
       "A dashboard for visualizing conversation metrics between business and their customers, \
@@ -18,7 +39,7 @@ export const professionalProjects = [
     links: [
       {
         type: "external",
-        link: "http://innoloft.com/",
+        link: "http://hub.360dialog.com/dashboard/insights",
       },
     ],
   },
@@ -33,7 +54,7 @@ export const professionalProjects = [
     technologies: [
       "React",
       "Javascript",
-      "Hooks",
+      "React-Hooks",
       "Redux",
       "Draftjs",
       "React-beautiful-DND",
@@ -41,7 +62,7 @@ export const professionalProjects = [
     links: [
       {
         type: "external",
-        link: "http://innoloft.com/",
+        link: "http://innoloft.com/pipelines",
       },
     ],
   },
@@ -60,7 +81,7 @@ export const professionalProjects = [
     links: [
       {
         type: "external",
-        link: "http://innoloft.com/",
+        link: "http://innoloft.com/forms/my-forms",
       },
     ],
   },

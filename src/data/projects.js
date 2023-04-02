@@ -4,8 +4,7 @@ export const professionalProjects = [
     title: "InnoPrograms",
     description:
       "A programs module integrated with the Innoloft ecosystem, that allows companies create their own customized programs and lessons dashboard, and customize various aspects to their specific needs, showing progress of participants and managing tasks assignments for each chapters and lesson.",
-    image:
-      "https://storage.googleapis.com/turing_developers/portfolio/1652638824236_Bildschirmfoto%202022-02-24%20um%2017.20.33.png",
+    image: "/InnoPrograms_2.png",
     technologies: [
       "React",
       "Javascript",
@@ -68,7 +67,9 @@ export const professionalProjects = [
   },
   {
     title: "Innoloft Forms",
-    description: "",
+    description:
+      "A configurable form tool for collecting surveys and user application data, the tool is for the most part similar to Google forms with additional functionalities like integration with other tools.\
+     Built using React as the core development library, Redux for state management",
     image: "/inno_forms.png",
     technologies: [
       "React",
@@ -179,7 +180,7 @@ export const personalProjects = [
   {
     links: {
       github: "https://github.com/isyel/disney-plus-clone",
-      external: "https://disney-clone-d1e27.firebaseapp.com/",
+      external: "https://disneyplus-clone-b6227.web.app/",
     },
     image: "/disney-plus.png",
     title: "Disney+ Clone",
@@ -249,7 +250,7 @@ export const personalProjects = [
       github: "https://bitbucket.org/isyel/mbduserinterface",
       external: "https://mbd-company.netlify.app/",
     },
-    image: "/fb-clone.png",
+    image: "/MBD_company.png",
     title: "MyBoardDeals Companies Web App",
     description:
       "A personal mobile advertising app, with tailored advertisement for each user, \

@@ -279,21 +279,4 @@ export const personalProjects = [
       "Vercel Hosting",
     ],
   },
-  {
-    links: {
-      github: "https://github.com/isyel/fb-clone",
-      external: "https://facebook-clone-snowy.vercel.app/",
-    },
-    image: "/fb-clone.png",
-    title: "Facebook Clone",
-    description:
-      "A facebook clone website, with a cloned version of facebook new interface look, built with  Angular and Firebase Database and Authentication",
-    technologies: [
-      "Javascript",
-      "Angular",
-      "Firebase",
-      "Git",
-      "Vercel Hosting",
-    ],
-  },
 ];
